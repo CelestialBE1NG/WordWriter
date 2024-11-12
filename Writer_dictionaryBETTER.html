@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Writer Directory Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Word Writer Directory Simulator</h1>
+
+    <div class="scrollable-content">
+        <div class="section">
+            <h2>Directory Setup</h2>
+            <p>Enter a directory (simulated as a folder name):</p>
+            <input type="text" id="directoryInput" placeholder="Enter directory name">
+            <button onclick="setupDirectory()">Set Directory</button>
+            <p id="directoryMessage" class="message"></p>
+        </div>
+
+        <div class="section">
+            <h2>Add Files</h2>
+            <p>Enter file names (simulating text files):</p>
+            <input type="text" id="fileNameInput" placeholder="Enter file name (e.g., file1.txt)">
+            <button onclick="addFile()">Add File</button>
+        </div>
+
+        <div class="section">
+            <h2>Add Word and Definition</h2>
+            <p>Enter a word and its definition:</p>
+            <input type="text" id="wordInput" placeholder="Enter word">
+            <input type="text" id="definitionInput" placeholder="Enter definition">
+            <button onclick="addWord()">Add Word and Definition</button>
+        </div>
+
+        <div class="section">
+            <h2>File Count</h2>
+            <button onclick="countFiles()">Count Files</button>
+            <p id="fileCountMessage" class="message"></p>
+        </div>
+
+        <div class="section">
+            <h2>Current Directory Contents</h2>
+            <button onclick="showDirectoryContents()">Show Directory Contents</button>
+            <pre id="directoryContents"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
